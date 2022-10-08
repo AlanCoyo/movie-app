@@ -8,6 +8,7 @@ export const useFetchMovieById = (movieId) => {
     const getMovie = async (movieId, language) => { 
         const results = await getMovieById(movieId);
         setMovie(results);
+        console.log(results);
         setIsLoading(false);
     };
 

@@ -8,7 +8,6 @@ export const Movie = () => {
   const {movieId} = useParams();
   const {movie, isLoading} = useFetchMovieById(movieId);
 
-  console.log("Movie", movie);
 
   return (
     <div className="text-center">
